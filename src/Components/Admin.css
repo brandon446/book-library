@@ -1,0 +1,79 @@
+.admin{
+    flex-direction: row;
+}
+
+.admin_header {
+  align-items: center;
+  color: rgb(34, 42, 153);
+  justify-content: center;
+  text-align: center;
+}
+.admin_body {
+  display: flex;
+  padding: 20px;
+  width: fit-content;
+  flex-direction: row;
+
+ 
+}
+
+.body_card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+  width: 100%;
+  padding-left: 40px;
+  max-height: 400px;
+  min-width: 100px;
+}
+.card img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.admin_form {
+  width: 700px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 20px;
+  align-items: center;
+  margin-left: 400px;
+  justify-content: center;
+}
+
+.admin_form h2 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.admin_form form input{
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+}
+.admin_form form textarea{
+    height: 60px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+}
+.form_button{
+    background: #c5c0d1;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    border-radius: 2px;
+    height: 30px;
+    width: 100%;
+}

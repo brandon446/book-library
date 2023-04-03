@@ -1,0 +1,117 @@
+.slantContainer{
+  display:flex;
+  flex-flow:row;
+  height: 300px;
+}
+.slantedShare{
+  background-color: black;
+  color: white;
+  position: relative;
+  width:100%;
+  padding: 10px 30px 10px 100px;
+}
+.slantedShare::after {
+  background: rgb(208, 212, 217);
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  transform-origin: bottom left;
+  -ms-transform: skew(-10deg, 0deg);
+  -webkit-transform: skew(-10deg, 0deg);
+  transform: skew(-10deg, 0deg);
+}
+
+.slantedDonate{
+  background-color: black;
+  color: white;
+  position: relative;
+  width:100%;
+  padding: 10px 30px 10px 10px;
+  z-index: 1;
+}
+.slantedDonate::before {
+  background: rgb(252,251,252);
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform-origin: top left;
+  -ms-transform: skew(-10deg, 0deg);
+  -webkit-transform: skew(-10deg, 0deg);
+  transform: skew(-10deg, 0deg);
+}
+
+.no-underline {
+  text-decoration: none;
+}
+#my-button {
+  --bg: #000;
+  --hover-bg: #ff90e8;
+  --hover-text: #000;
+  color: #fff;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+#my-button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem,-0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+#my-button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+#cardHomePage .card {
+  border: 2px solid blue;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#cardHomePage .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+#slantDiv1 {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  #slantDiv1 {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #slantDiv1 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #slantDiv1 {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
